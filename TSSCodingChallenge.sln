@@ -7,9 +7,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CA81B3BB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0CC27FF-EEB0-4863-94A9-2DA0EE7964A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSSCodingChallenge.IntervalMerge", "src\TSSCodingChallenge.IntervalMerge\TSSCodingChallenge.IntervalMerge.csproj", "{FE34A256-B884-4E05-ACC9-A509383930F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSSCodingChallenge.IntervalMerge", "src\TSSCodingChallenge.IntervalMerge\TSSCodingChallenge.IntervalMerge.csproj", "{FE34A256-B884-4E05-ACC9-A509383930F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSSCodingChallenge.ItervalMerge.Tests", "tests\TSSCodingChallenge.ItervalMerge.Tests\TSSCodingChallenge.ItervalMerge.Tests.csproj", "{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TSSCodingChallenge.IntervalMerge.Tests", "tests\TSSCodingChallenge.IntervalMerge.Tests\TSSCodingChallenge.IntervalMerge.Tests.csproj", "{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{278EAEAB-EDD5-4019-A106-AE5A1C480300}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

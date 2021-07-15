@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "TSSCodingChallenge.IntervalMerge": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
