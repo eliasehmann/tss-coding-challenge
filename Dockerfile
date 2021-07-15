@@ -8,10 +8,13 @@ WORKDIR /src
 COPY ["src/TSSCodingChallenge.IntervalMerge/TSSCodingChallenge.IntervalMerge.csproj", "src/TSSCodingChallenge.IntervalMerge/"]
 COPY ["tests/TSSCodingChallenge.IntervalMerge.Tests/TSSCodingChallenge.IntervalMerge.Tests.csproj", "tests/TSSCodingChallenge.IntervalMerge.Tests/"]
 RUN dotnet restore "src/TSSCodingChallenge.IntervalMerge/TSSCodingChallenge.IntervalMerge.csproj"
-RUN dotnet restore "tests/TSSCodingChallenge.IntervalMerge/TSSCodingChallenge.IntervalMerge.Tests.csproj"
+RUN dotnet restore "tests/TSSCodingChallenge.IntervalMerge.Tests/TSSCodingChallenge.IntervalMerge.Tests.csproj"
 COPY . .
 WORKDIR "/src/src/TSSCodingChallenge.IntervalMerge"
 RUN dotnet build "TSSCodingChallenge.IntervalMerge.csproj" -c Release -o /app/build
+WORKDIR "/src/tests/TSSCodingChallenge.IntervalMerge.Tests"
+RUN dotnet test "TSSCodingChallenge.IntervalMerge.Tests.csproj" -c Release
+WORKDIR "/src/src/TSSCodingChallenge.IntervalMerge"
 
 FROM build AS publish
 RUN dotnet publish "TSSCodingChallenge.IntervalMerge.csproj" -c Release -o /app/publish
