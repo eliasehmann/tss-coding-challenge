@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CA81B3BB-C261-4930-A3F7-F8276CA55238}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A0CC27FF-EEB0-4863-94A9-2DA0EE7964A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSSCodingChallenge.IntervalMerge", "src\TSSCodingChallenge.IntervalMerge\TSSCodingChallenge.IntervalMerge.csproj", "{FE34A256-B884-4E05-ACC9-A509383930F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TSSCodingChallenge.ItervalMerge.Tests", "tests\TSSCodingChallenge.ItervalMerge.Tests\TSSCodingChallenge.ItervalMerge.Tests.csproj", "{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE34A256-B884-4E05-ACC9-A509383930F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE34A256-B884-4E05-ACC9-A509383930F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE34A256-B884-4E05-ACC9-A509383930F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE34A256-B884-4E05-ACC9-A509383930F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE705BA-F7A7-4C52-A0A0-7CB420799B44}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FE34A256-B884-4E05-ACC9-A509383930F1} = {A0CC27FF-EEB0-4863-94A9-2DA0EE7964A7}
+		{2FE705BA-F7A7-4C52-A0A0-7CB420799B44} = {CA81B3BB-C261-4930-A3F7-F8276CA55238}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {422E0FF1-21BC-44FC-980B-A15E41865782}
+	EndGlobalSection
+EndGlobal
