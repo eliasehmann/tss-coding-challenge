@@ -32,4 +32,4 @@ If the item has to be merged with the previous one, it merges both items into on
 ## Perspective on resilience
 
 You can improve the stability of the application for large inputs by dividing and conquering!
-For example split a extremly long output into *n* parts, and put them into 10 parallel running instances of this program. Heuristically you could tell every part gets smaller after, so you can now merge the results and run them through the program again. 
+For example split a extremly long input into *n* parts, and put each of them into seperate instance of this program. Heuristically you could tell the output gets smaller, so you can now merge the results and run them through the program again.
