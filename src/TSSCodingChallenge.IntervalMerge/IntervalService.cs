@@ -30,7 +30,8 @@ namespace TSSCodingChallenge.IntervalMerge
                     // check if it intervals have to be merge
                     if (previousInterval.Item2 >= intervals[i].Item1)
                     {
-                        var mergedInterval = new Tuple<int, int>(previousInterval.Item1, intervals[i].Item2);
+
+                        var mergedInterval = new Tuple<int, int>(previousInterval.Item1, Math.Max(previousInterval.Item2,intervals[i].Item2));
                         mergedIntervals[mergedIntervals.Count()-1] = mergedInterval;
                     }
                     else
@@ -44,7 +45,7 @@ namespace TSSCodingChallenge.IntervalMerge
             return mergedIntervals;
         }
 
-        public static void  PrintIntervals(List<Tuple<int, int>> intervals)
+        public static void PrintIntervals(List<Tuple<int, int>> intervals)
         {
             string output="";
             foreach(var interval in intervals)
