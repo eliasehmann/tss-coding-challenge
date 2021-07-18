@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace TSSCodingChallenge.IntervalMerge
 {
@@ -6,7 +7,9 @@ namespace TSSCodingChallenge.IntervalMerge
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var intervals=IntervalService.ValidateAndParseIntervalsString(args[0]);
+            var mergedIntervals = IntervalService.MergeAndSortIntervals(intervals);
+            IntervalService.PrintIntervals(mergedIntervals);
         }
     }
 }
