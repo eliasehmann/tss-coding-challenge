@@ -44,6 +44,17 @@ namespace TSSCodingChallenge.IntervalMerge
             return mergedIntervals;
         }
 
+        public static void  PrintIntervals(List<Tuple<int, int>> intervals)
+        {
+            string output="";
+            foreach(var interval in intervals)
+            {
+                output+=string.Format("[{0}, {1}]", interval.Item1, interval.Item2);
+            }
+
+            Console.WriteLine(output);
+        }
+
         public static List<Tuple<int, int>> ValidateAndParseIntervalsString(string intervalsString)
         {
             // remove whitespaces
