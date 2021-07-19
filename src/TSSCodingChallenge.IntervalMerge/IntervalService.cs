@@ -11,7 +11,7 @@ namespace TSSCodingChallenge.IntervalMerge
     {
 
 
-        public static List<Tuple<int, int>> MergeAndSortIntervals(List<Tuple<int, int>> intervals)
+        public static List<Tuple<int, int>> Merge(List<Tuple<int, int>> intervals)
         {
 
 

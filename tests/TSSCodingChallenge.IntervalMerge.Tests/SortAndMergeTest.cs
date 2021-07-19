@@ -18,7 +18,7 @@ namespace TSSCodingChallenge.ItervalMerge.Tests
             input.Add(new Tuple<int, int>(1, 4));
             input.Add(new Tuple<int, int>(89, 92));
             input.Add(new Tuple<int, int>(5, 9));
-            var returnedIntevals = IntervalService.MergeAndSortIntervals(input);
+            var returnedIntevals = IntervalService.Merge(input);
 
             var expectedIntervals= new List<Tuple<int, int>>();
             expectedIntervals.Add(new Tuple<int, int>(1, 4));
@@ -39,7 +39,7 @@ namespace TSSCodingChallenge.ItervalMerge.Tests
             input.Add(new Tuple<int, int>(5, 20));
             input.Add(new Tuple<int, int>(89, 92));
             input.Add(new Tuple<int, int>(11, 59));
-            var returnedIntevals = IntervalService.MergeAndSortIntervals(input);
+            var returnedIntevals = IntervalService.Merge(input);
 
             var expectedIntervals = new List<Tuple<int, int>>();
             expectedIntervals.Add(new Tuple<int, int>(0, 59));
