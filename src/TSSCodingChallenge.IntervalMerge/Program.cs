@@ -9,7 +9,7 @@ namespace TSSCodingChallenge.IntervalMerge
         {
             try { 
             var intervals=IntervalService.ValidateAndParseIntervalsString(args[0]);
-            var mergedIntervals = IntervalService.MergeAndSortIntervals(intervals);
+            var mergedIntervals = IntervalService.Merge(intervals);
             IntervalService.PrintIntervals(mergedIntervals);
             }
             catch(Exception e)
